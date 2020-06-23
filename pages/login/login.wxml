@@ -1,0 +1,9 @@
+<view class="container">
+    <image class="logo" src="/assets/imgs/ic_launcher.png" />
+    <view class="wxlogin btn-login" bind:tap="wxlogin">微信登录</view>
+    <view class="doubanlogin btn-login" bind:tap="doubanlogin">已有豆瓣帐号登录</view>
+    <view class="agreement">
+        登录表示同意
+        <view class="open" bind:tap="openAgreement">豆瓣使用协议/隐私协议</view>
+    </view>
+</view>

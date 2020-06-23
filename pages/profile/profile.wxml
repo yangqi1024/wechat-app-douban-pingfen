@@ -1,0 +1,7 @@
+<view>
+    <view class="login-wrapper">
+        <view class="login">登录</view>
+        <image src="/assets/imgs/bg_mine_login.png" mode="aspectFill"></image>
+    </view>
+    <view class="version">版本1.0.39</view>
+</view>
