@@ -3,5 +3,38 @@
         <view class="login">登录</view>
         <image src="/assets/imgs/bg_mine_login.png" mode="aspectFill"></image>
     </view>
+    <view class="items-wrapper">
+        <view class="title-wrapper">
+            <view class="title">我的书影音</view>
+            <view class="view">
+                登录查看
+                <view class="arrow"></view>
+            </view>
+        </view>
+        <view class="items">
+            <view class="item" wx:for="{{items}}" wx:key="unique" bind:tap="open" data-index="{{index}}">
+                <image src="/assets/imgs/{{item.icon}}" />
+                <view class="info-wrapper">
+                    <view class="info">
+                        <view class="left">
+                            <view class="top">{{item.title}}</view>
+                            <view class="bottom">
+                                <view class="count">{{item.count}}</view>
+                                <view class="text">{{item.has}}</view>
+                            </view>
+                        </view>
+                        <view class="right">
+                            <text class="text">{{item.mark}}</text>
+                            <view class="begin-wrapper">
+                                <view class="begin">立即开启</view>
+                                <view class="arrow"></view>
+                            </view>
+                        </view>
+                    </view>
+                    <view class="divider" wx:if="{{index < items.length -1 }}"></view>
+                </view>
+            </view>
+        </view>
+    </view>
     <view class="version">版本1.0.39</view>
 </view>
