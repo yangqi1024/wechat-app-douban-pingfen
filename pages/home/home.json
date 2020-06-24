@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "movieItem":"/component/movieItem/movieItem",
+    "ratingStar":"/component/ratingStar/ratingStar"
+   }
+}

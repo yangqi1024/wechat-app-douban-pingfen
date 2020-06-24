@@ -1,9 +1,10 @@
 {
   "pages": [
+    "pages/home/home",
     "pages/profile/profile",
     "pages/login/login",
-    "pages/agreement/agreement"
-
+    "pages/agreement/agreement",
+    "pages/rank/rank"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -11,6 +12,33 @@
     "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle": "black"
   },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
   "style": "v2",
-  "sitemapLocation": "sitemap.json"
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "/assets/imgs/ic_tab_home_normal.png",
+        "selectedIconPath": "/assets/imgs/ic_tab_home_active.png"
+      },
+      {
+        "pagePath": "pages/rank/rank",
+        "text": "榜单",
+        "iconPath": "/assets/imgs/ic_tab_subject_normal.png",
+        "selectedIconPath": "/assets/imgs/ic_tab_subject_active.png"
+      },
+      {
+        "pagePath": "pages/profile/profile",
+        "text": "我的",
+        "iconPath": "/assets/imgs/ic_tab_profile_normal.png",
+        "selectedIconPath": "/assets/imgs/ic_tab_profile_active.png"
+      }
+    ]
+  }
 }

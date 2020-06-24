@@ -1,0 +1,28 @@
+<view class="items-wrapper">
+    <view class="title-wrapper">
+        <view class="title">{{title}}</view>
+        <view class="view-wrapper">
+            <view class="view">查看更多</view>
+            <view class="arrow"></view>
+        </view>
+    </view>
+    <scroll-view class="scroll-view_H" scroll-x="true">
+        <view class="item-wrapper">
+            <view class="item" wx:for="{{movies}}" wx:key="unique">
+                <view class="info">
+                    <view class="img"></view>
+                    <view class="name">{{item.title}}</view>
+                    <view class="score-wrapper">
+                        <view class="star-wrapper" wx:if="{{item.desc}}">
+                            <view class="desc">尚未上映</view>
+                        </view>
+                        <view class="star-wrapper" wx:else>
+                            <ratingStar score="{{item.score}}"></ratingStar>
+                        </view>
+                        <view class="score">{{item.score}}</view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </scroll-view>
+</view>

@@ -1,0 +1,3 @@
+<view>
+    <movieItem wx:for="{{items}}" title="{{item.title}}" movies="{{item.movies}}" wx:key="unique"></movieItem>
+</view>

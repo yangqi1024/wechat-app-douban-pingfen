@@ -25,6 +25,12 @@ Page({
       },
     ]
   },
+  login(){
+    wx.navigateTo({
+      url: '/pages/login/login',
+    })
+  },
+
   open: function (e) {
     const index = e.currentTarget.dataset.index;
     if (index == 0) {
