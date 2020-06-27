@@ -10,28 +10,27 @@ Component({
   properties: {
     score: {
       type: Number,
-      observer: function(new_val, old_val, path) {
+      observer: function (new_val, old_val, path) {
         let stars = DEFAULT_ITEMS;
         if (new_val > 0) {
-          let halfVal = new_val / 2;
-          let floor = Math.floor(halfVal);
-          console.log("halfVal:" + halfVal);
-          console.log("floor:" + floor);
-          if (floor != halfVal) {
+          new_val = new_val / 10;
+          let floor = Math.floor(new_val);
+          if (floor != new_val) {
             stars[floor] = STAR_HALF;
           }
           for (let i = 0; i < floor; i++) {
             stars[i] = STAR_ON;
           }
         }
+
         this.setData({
           stars: stars
         });
       }
     },
-    iconSize:{
-      type:String,
-      value:"26rpx"
+    iconSize: {
+      type: String,
+      value: "26rpx"
     }
   },
 

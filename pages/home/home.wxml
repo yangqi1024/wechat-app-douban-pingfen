@@ -1,3 +1,21 @@
 <view>
-    <movieItem wx:for="{{items}}" title="{{item.title}}" movies="{{item.movies}}" wx:key="unique"></movieItem>
+    <view class="header">
+        <view class="searchWrapper">
+            <image class="icon_search" src="/assets/imgs/ic_search.png" />
+            搜索
+        </view>
+    </view>
+    <view class="row" wx:for="{{allMovies}}" movies="{{movies}}" wx:key="unique">
+        <view class="title-wrapper">
+            <view class="title">{{item.title}}</view>
+            <view class="view-wrapper" bind:tap="viewMore" data-index="{{index}}">
+                <view class="view">查看更多</view>
+                <view class="arrow"></view>
+            </view>
+        </view>
+        <scroll-view class="scroll-view_H" scroll-x="true">
+            <movieItem class="item" wx:for="{{item.movies}}" wx:for-item="movie" wx:key="unique" movie="{{movie}}">
+            </movieItem>
+        </scroll-view>
+    </view>
 </view>

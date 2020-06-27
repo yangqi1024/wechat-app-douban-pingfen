@@ -2,3 +2,81 @@
 Page{
     height: 100%;
 }
+.header{
+    height: 80rpx;
+    padding: 0 15rpx;
+    background-color: #42BD55;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30rpx;
+}
+.searchWrapper{
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-radius: 10rpx;
+    height: 60rpx;
+    color: #666666;
+}
+
+.searchWrapper .icon_search{
+    width: 36rpx;
+    height: 36rpx;
+    margin-right: 5rpx;
+}
+
+.row{
+    margin-bottom: 30rpx;
+}
+ .view-wrapper{
+    display: flex;
+    align-items: center;
+  }
+  
+ .view-wrapper .view{
+    font-size: 30rpx;
+    color: #16A926;
+  }
+  
+  .title-wrapper .arrow{
+    width: 12rpx;
+    height: 12rpx;
+    border: 2px solid #16A926;
+    border-left: none;
+    border-top: none;
+    transform: rotate(-45deg);
+  }
+  
+   .scroll-view_H{
+    white-space: nowrap;
+  }
+
+  .title-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30rpx;
+    margin-left: 30rpx;
+  }
+  
+  .title-wrapper .title{
+    font-weight: bold;
+    font-size: 34rpx;
+  } 
+
+  .title-wrapper .view-wrapper{
+    display: flex;
+    align-items: center;
+    margin-right: 30rpx;
+  }
+
+
+  .item{
+    margin-left: 30rpx;
+  }
+
+  .item:last-of-type{
+    margin-right: 30rpx;
+  }

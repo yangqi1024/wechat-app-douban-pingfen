@@ -1,36 +1,10 @@
-.items-wrapper{
-  padding-left: 30rpx;
-  display: flex;
-  flex-direction: column;
-  margin-top: 30rpx;
-  margin-bottom: 20px;
-}
-.items-wrapper .scroll-view_H{
-  white-space: nowrap;
+
+
+.item{
+  display: inline-flex;
 }
 
-.item-wrapper{
-  width: 100%;
-  margin-right: 20rpx;
-  display: flex;
-}
-.title-wrapper{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 30rpx;
-}
-
-.title-wrapper .title{
-  font-weight: bold;
-  font-size: 34rpx;
-} 
-.title-wrapper .view-wrapper{
-  display: flex;
-  align-items: center;
-  margin-right: 30rpx;
-}
-.item-wrapper .arrow{
+.item .arrow{
   width: 26rpx;
   height: 26rpx;
   border: 2px solid #05ee66 ;
@@ -38,17 +12,13 @@
   border-top: none;
   transform: rotate(-45deg);
 }
-.item-wrapper .item{
-  display: flex;
-  margin-right: 20rpx;
-}
 
-.item-wrapper .item .info{
+.item .info{
   display: flex;
   flex-direction: column;
 }
 
-.item-wrapper .item .info .name{
+.item .info .name{
   font-size: 32rpx;
   font-weight: bold; 
   max-width: 200rpx;  
@@ -57,51 +27,28 @@
   text-overflow: ellipsis; 
 }
 
-.item-wrapper .item .info .img{
-  width: 200rpx;
-  height: 280rpx;
+.item .info .img{
+  width: 201rpx;
+  height: 301rpx;
   background-color: coral;
   margin-bottom: 20rpx;
   border-radius: 10rpx;
 }
 
-.item-wrapper .item .info .star-wrapper .desc{
+.item .info  .desc{
   font-size: 24rpx;
   color: #868686;
 }
 
-.item-wrapper .item .info .score-wrapper{
+.item .info .score-wrapper{
   width: 100%;
   display: flex;
   align-items: center;
 }
 
-.item-wrapper .item .info .star-wrapper .star-icon{
-  width: 26rpx;
-  height: 26rpx;
-}
-
-.item-wrapper .item .info .score-wrapper .score{
+.item .info .score-wrapper .score{
   font-size: 24rpx;
   color: #666666;
   margin-left: 10rpx;
 }
 
-.items-wrapper .view-wrapper{
-  display: flex;
-  align-items: center;
-}
-
-.items-wrapper .view-wrapper .view{
-  font-size: 30rpx;
-  color: #16A926;
-}
-
-.items-wrapper .arrow{
-  width: 16rpx;
-  height: 16rpx;
-  border: 2px solid #16A926;
-  border-left: none;
-  border-top: none;
-  transform: rotate(-45deg);
-}

@@ -8,8 +8,8 @@ Component({
         type:String,
       },
 
-      movies:{
-        type:Array
+      movie:{
+        type:Object
       }
   },
 
