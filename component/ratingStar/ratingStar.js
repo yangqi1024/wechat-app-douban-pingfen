@@ -2,7 +2,6 @@
 const STAR_ON = "/assets/imgs/rating_star_small_on.png";
 const STAR_OFF = "/assets/imgs/rating_star_small_off.png";
 const STAR_HALF = "/assets/imgs/rating_star_small_half.png";
-const DEFAULT_ITEMS = [STAR_OFF, STAR_OFF, STAR_OFF, STAR_OFF, STAR_OFF];
 Component({
   /**
    * 组件的属性列表
@@ -10,8 +9,8 @@ Component({
   properties: {
     score: {
       type: Number,
-      observer: function (new_val, old_val, path) {
-        let stars = DEFAULT_ITEMS;
+      observer: function(new_val, old_val, path) {
+        let stars = [STAR_OFF, STAR_OFF, STAR_OFF, STAR_OFF, STAR_OFF];
         if (new_val > 0) {
           new_val = new_val / 10;
           let floor = Math.floor(new_val);
@@ -22,7 +21,6 @@ Component({
             stars[i] = STAR_ON;
           }
         }
-
         this.setData({
           stars: stars
         });
@@ -38,7 +36,7 @@ Component({
    * 组件的初始数据
    */
   data: {
-    stars: DEFAULT_ITEMS
+    stars: [STAR_OFF, STAR_OFF, STAR_OFF, STAR_OFF, STAR_OFF]
   },
 
   /**

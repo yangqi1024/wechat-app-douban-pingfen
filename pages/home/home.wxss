@@ -53,6 +53,7 @@ Page{
   
    .scroll-view_H{
     white-space: nowrap;
+    height: 402rpx;
   }
 
   .title-wrapper{

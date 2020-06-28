@@ -6,7 +6,8 @@
     "pages/agreement/agreement",
     "pages/rank/rank",
     "pages/list/list",
-    "pages/search/search"
+    "pages/search/search",
+    "pages/detail/detail"
   ],
   "window": {
     "backgroundTextStyle": "light",

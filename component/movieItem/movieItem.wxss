@@ -30,9 +30,9 @@
 .item .info .img{
   width: 201rpx;
   height: 301rpx;
-  background-color: coral;
   margin-bottom: 20rpx;
   border-radius: 10rpx;
+  border: 2rpx solid #eee
 }
 
 .item .info  .desc{

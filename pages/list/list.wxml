@@ -1,2 +1,8 @@
-<!--pages/list/list.wxml-->
-<text>pages/list/list.wxml</text>
+<!-- pages/list/list.wxml -->
+<view class="container">
+    <view class="item-wrapper">
+        <movieItem class="item" wx:for="{{movies}}" wx:for-item="movie" movie="{{movie}}" />
+        <movieItem class="space" wx:if="{{movies.length % 3 > 0}}" />
+        <movieItem class="space" wx:if="{{movies.length % 3 == 1}}" />
+    </view>
+</view>

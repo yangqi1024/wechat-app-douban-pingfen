@@ -1,4 +1,4 @@
-<view class="item">
+<view class="item" bind:tap="seeDetail" data-movieid="{{movie.id}}">
     <view class="info">
         <image class="img" src="{{movie.images.large}}"></image>
         <view class="name">{{movie.title}}</view>

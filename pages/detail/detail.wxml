@@ -1,0 +1,115 @@
+<view class="container">
+    <view class="introduction">
+        <image class="img" src="{{movie.images.large}}" />
+        <view class="info">
+            <view class="title">{{movie.titleDesc}}</view>
+            <view class="original-title">{{movie.originalTitleDesc}}</view>
+            <view class="desc">{{movie.desc}}</view>
+            <view class="count-wrapper">
+                <view class="count">想看</view>
+                <view class="count">看过</view>
+            </view>
+        </view>
+    </view>
+    <view class="rating-wrapper">
+        <view class="title-wrapper">
+            <view class="title">豆瓣评分</view>
+            <view class="arrow"></view>
+        </view>
+        <view class="rating-info">
+            <view class="average-wrapper">
+                <view class="average">{{movie.rating.average}}</view>
+                <ratingStar score="{{movie.numberStars}}" />
+            </view>
+        </view>
+    </view>
+    <view class="row-wrapper">
+        <view class="title-wrapper">
+            <view class="title">简介</view>
+        </view>
+        <view class="summary">
+            <view class="{{summaryOpen?'summaryOpen':'summaryClose'}}">{{movie.summary}}</view>
+            <view class="open" bind:tap="openSummary">{{summaryOpen?'收起':'展开'}}</view>
+        </view>
+    </view>
+    <view class="row-wrapper">
+        <view class="title-wrapper">
+            <view class="title">影人</view>
+        </view>
+        <scroll-view class="scroll-view-H" scroll-x="true">
+            <view class="scroll-view-item_H" wx:for="{{movie.directors}}" wx:for-item="director" wx:key="unique">
+                <image class="avatar" src="{{director.avatars.large}}" />
+                <view class="name">{{director.name}}</view>
+                <view class="job">导演</view>
+            </view>
+            <view class="scroll-view-item_H" wx:for="{{movie.casts}}" wx:for-item="cast" wx:key="unique">
+                <image class="avatar" src="{{cast.avatars.large}}" />
+                <view class="name">{{cast.name}}</view>
+                <view class="job">演员</view>
+            </view>
+        </scroll-view>
+    </view>
+    <view class="row-wrapper">
+        <view class="title-wrapper">
+            <view class="title">预告片/剧照</view>
+            <view class="count-wrapper">
+                <view class="count">全部 {{movie.photos_count}}</view>
+                <view class="arrow"></view>
+            </view>
+        </view>
+        <scroll-view class="scroll-view-H" scroll-x="true">
+            <!-- <view class="photo-wrapper" wx:for="{{movie.trailer_urls}}" wx:for-item="director" wx:key="unique">
+   
+            </view> -->
+            <image class="photo" wx:for="{{movie.photos}}" wx:for-item="photo" wx:key="unique" src="{{photo.icon}}" />
+        </scroll-view>
+    </view>
+    <view class="comment-wrapper">
+        <view class="title-wrapper">
+            <view class="title">短评</view>
+            <view class="count-wrapper">
+                <view class="count">全部 {{movie.comments_count}}</view>
+                <view class="arrow"></view>
+            </view>
+        </view>
+        <view class="comment-info" wx:for="{{movie.popular_comments}}" wx:for-item="comment" wx:key="unique">
+            <view class="author">
+                <image class="avatar" src=" {{comment.author.avatar}}"></image>
+                <view class="info">
+                    <view class="name">{{comment.author.name}}</view>
+                    <view class="date-wrapper">
+                        <ratingStar score="{{comment.rating.value * 10}}" />
+                        <view class="date">{{comment.created_at}}</view>
+                    </view>
+                </view>
+            </view>
+            <view class="comment">{{comment.content}}</view>
+            <view class="like-wrapper">
+                <image class="icon" src="/assets/imgs/ic_like.png" />
+                <view class="like">{{comment.useful_count}}</view>
+            </view>
+            <view class="divider"></view>
+        </view>
+        <view class="title-wrapper">
+            <view class="title">查看全部短评</view>
+            <view class="count-wrapper">
+                <view class="arrow"></view>
+            </view>
+        </view>
+    </view>
+    <view class="review-wrapper">
+        <view class="title-wrapper">
+            <view class="title">影评</view>
+            <view class="review-count">{{movie.reviews_count}}条</view>
+        </view>
+        <view class="review-info" wx:for="{{movie.popular_reviews}}" wx:for-item="review" wx:key="unique">
+            <view class="author">
+                <image class="avatar" src="{{review.author.avatar}}"></image>
+                <view class="name">{{review.author.name}} 看过</view>
+                <ratingStar wx:if="{{review.rating.value > 0}}" score="{{review.rating.value * 10}}" />
+            </view>
+            <view class="title">{{review.title}}</view>
+            <view class="review">{{review.summary}}</view>
+        </view>
+    </view>
+</view>
