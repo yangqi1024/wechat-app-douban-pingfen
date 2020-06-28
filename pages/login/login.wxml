@@ -1,3 +1,4 @@
+<nav-bar title="登录"/>
 <view class="container">
     <image class="logo" src="/assets/imgs/ic_launcher.png" />
     <view class="wxlogin btn-login" bind:tap="wxlogin">微信登录</view>

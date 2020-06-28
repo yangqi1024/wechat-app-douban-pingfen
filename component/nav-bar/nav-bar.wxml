@@ -1,0 +1,18 @@
+<!-- component/nav-bar/nav-bar.wxml -->
+<view>
+<view style="height:{{topHeight}}px">
+    
+</view>
+  
+    <view class="container">
+    <view style="{{statusBarStyle}}"></view>
+    <view class="nav-bar" style="{{navBarStyle}}">
+        {{title}}
+        <view class="icon">
+            <image wx:if="{{back === 'true'}}" class="back" src="/assets/imgs/nav_back.png" bind:tap="back"></image>
+            <image wx:if="{{home === 'true'}}" class="home" src="/assets/imgs/nav_home.png"  bind:tap="home"></image>
+        </view>
+    </view>
+</view>
+</view>
+  

@@ -1,3 +1,5 @@
+
+<nav-bar title="书影音档案" back="false" home="false"/>
 <view>
     <view class="login-wrapper">
         <view class="login" bindtap="login">登录</view>

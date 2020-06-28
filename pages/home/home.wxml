@@ -1,3 +1,4 @@
+<nav-bar title="首页" back="false" home="false"  statusBarColor="#42BD55" navBarColor="#42BD55" titleColor="#fff"/>
 <view>
     <view class="header">
         <view class="searchWrapper">
@@ -14,8 +15,7 @@
             </view>
         </view>
         <scroll-view class="scroll-view_H" scroll-x="true">
-            <movieItem class="item" wx:for="{{item.movies}}" wx:for-item="movie" wx:key="unique" movie="{{movie}}">
-            </movieItem>
+            <movieItem class="item" wx:for="{{item.movies}}" wx:for-item="movie" wx:key="unique" movie="{{movie}}"></movieItem>
         </scroll-view>
     </view>
 </view>

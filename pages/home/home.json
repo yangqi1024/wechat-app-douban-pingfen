@@ -1,10 +1,6 @@
 {
   "usingComponents": {
     "movieItem": "/component/movieItem/movieItem",
-    "ratingStar": "/component/ratingStar/ratingStar"
-  },
-  "backgroundTextStyle": "light",
-  "navigationBarBackgroundColor": "#42BD55",
-  "navigationBarTitleText": "首页",
-  "navigationBarTextStyle": "white"
+    "nav-bar": "/component/nav-bar/nav-bar"
+  }
 }

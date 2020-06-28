@@ -1,6 +1,8 @@
 /* pages/home/home.wxss */
 Page{
     height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 .header{
     height: 80rpx;
