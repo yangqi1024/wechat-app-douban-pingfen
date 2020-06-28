@@ -1,0 +1,29 @@
+/* component/search-bar/search-bar.wxss */
+
+.container{
+   background-color: #42BD55;
+   height: 80rpx;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.search-wrapper{
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    border-radius: 10rpx;
+    width: 100%;
+    margin: 0 10rpx;
+    height: 60rpx;
+}
+
+.search-wrapper .icon{
+    width: 30rpx;
+    height: 30rpx;
+    margin: 0 10rpx;
+}
+
+.search-wrapper .title{
+    font-size: 26rpx;
+}

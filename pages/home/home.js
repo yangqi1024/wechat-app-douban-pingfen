@@ -124,5 +124,11 @@ Page({
       url: `/pages/list/list?title=${obj.title}&url=${obj.url}`,
     });
 
+  },
+  search:function(){
+    wx.navigateTo({
+      url: '/pages/search/search'
+    });
+      
   }
 })

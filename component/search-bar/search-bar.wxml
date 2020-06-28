@@ -1,0 +1,6 @@
+<view class="container">
+    <view class="search-wrapper">
+        <image class="icon" src="/assets/imgs/ic_search.png" />
+          <input class="input"  placeholder="{{title}}" confirm-type="search" bindinput="bindinput" bindconfirm="bindconfirm"/>
+    </view>
+</view>

@@ -18,9 +18,10 @@
     left: 0;
     top: 0;
     height: 100%;
-    padding: 0 30rpx;
+    padding: 0 20rpx;
     display: flex;
     align-items: center;
+    color: red;
 }
 .icon image{
     width: 30rpx;

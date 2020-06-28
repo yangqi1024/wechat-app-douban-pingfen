@@ -1,0 +1,2 @@
+<nav-bar title="搜索"  statusBarColor="#42BD55" navBarColor="#42BD55" titleColor="#fff"/>
+<searchbar bind:search="bindSearch"/>

@@ -5,14 +5,15 @@
     "pages/login/login",
     "pages/agreement/agreement",
     "pages/rank/rank",
-    "pages/list/list"
+    "pages/list/list",
+    "pages/search/search"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle": "black",
-    "navigationStyle":"custom"
+    "navigationStyle": "custom"
   },
   "permission": {
     "scope.userLocation": {
