@@ -7,7 +7,9 @@
     "pages/rank/rank",
     "pages/list/list",
     "pages/search/search",
-    "pages/detail/detail"
+    "pages/detail/detail",
+    "pages/comment/comment",
+    "pages/review/review"
   ],
   "window": {
     "backgroundTextStyle": "light",

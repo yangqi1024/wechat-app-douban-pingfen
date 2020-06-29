@@ -12,7 +12,7 @@
             </view>
         </view>
     </view>
-    <view class="rating-wrapper">
+    <view class="rating-wrapper" bindtap="toComment">
         <view class="title-wrapper">
             <view class="title">豆瓣评分</view>
             <view class="arrow"></view>
@@ -73,24 +73,7 @@
                 <view class="arrow"></view>
             </view>
         </view>
-        <view class="comment-info" wx:for="{{movie.popular_comments}}" wx:for-item="comment" wx:key="unique">
-            <view class="author">
-                <image class="avatar" src=" {{comment.author.avatar}}"></image>
-                <view class="info">
-                    <view class="name">{{comment.author.name}}</view>
-                    <view class="date-wrapper">
-                        <ratingStar score="{{comment.rating.value * 10}}" />
-                        <view class="date">{{comment.created_at}}</view>
-                    </view>
-                </view>
-            </view>
-            <view class="comment">{{comment.content}}</view>
-            <view class="like-wrapper">
-                <image class="icon" src="/assets/imgs/ic_like.png" />
-                <view class="like">{{comment.useful_count}}</view>
-            </view>
-            <view class="divider"></view>
-        </view>
+        <comment-item  wx:for="{{movie.popular_comments}}" wx:for-item="comment" wx:key="unique" comment="{{comment}}"/>
         <view class="title-wrapper">
             <view class="title">查看全部短评</view>
             <view class="count-wrapper">
@@ -103,7 +86,7 @@
             <view class="title">影评</view>
             <view class="review-count">{{movie.reviews_count}}条</view>
         </view>
-        <view class="review-info" wx:for="{{movie.popular_reviews}}" wx:for-item="review" wx:key="unique">
+        <view class="review-info" wx:for="{{movie.popular_reviews}}" wx:for-item="review" wx:key="unique" bind:tap="review" data-id="{{review.id}}">
             <view class="author">
                 <image class="avatar" src="{{review.author.avatar}}"></image>
                 <view class="name">{{review.author.name}} 看过</view>

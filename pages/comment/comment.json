@@ -1,7 +1,7 @@
 {
   "usingComponents": {
-    "ratingStar":"/component/ratingStar/ratingStar",
     "nav-bar": "/component/nav-bar/nav-bar",
+    "ratingStar":"/component/ratingStar/ratingStar",
     "comment-item": "/component/comment-item/comment-item"
   }
 }

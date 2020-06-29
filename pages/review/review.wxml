@@ -1,0 +1,15 @@
+<nav-bar title="{{title}}的影评" />
+<view class="review-wrapper">
+    <view class="title">{{review.title}}</view>
+    <view class="author">
+        <image class="avatar" src="{{review.author.avatar}}"></image>
+        <view class="info">
+            <view class="name">{{review.author.name}}</view>
+            <view class="date-star">
+                <view class="date">{{review.created_at}}</view>
+                <ratingStar wx:if="{{review.rating.value > 0}}" score="{{review.rating.value * 10}}" />
+            </view>
+        </view>
+    </view>
+   <text class="review">{{review.content}}</text>
+</view>

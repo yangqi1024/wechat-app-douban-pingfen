@@ -187,83 +187,30 @@ Page{
     margin-right: 40rpx;
 }
 
-.comment-wrapper .comment-info {
-    display: flex;
-    flex-direction: column;
-}
-
-.comment-wrapper .comment-info .author{
-    display: flex;
-    align-items: center;
-}
-
-.comment-wrapper .comment-info .author .info{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.comment-wrapper .comment-info .author .info .date-wrapper{
-    display: flex;
-    color:#7E7E7F;
-    font-size: 22rpx;
-    align-items: center;
-}
-
-.comment-wrapper .comment-info .author .avatar{
-    width: 100rpx;
-    height: 100rpx;
-    border-radius: 50rpx;
-}
-
-.comment-wrapper .comment-info .comment{
-    font-size: 30rpx;
-    margin: 20rpx 0;
-}
-
-.comment-wrapper .comment-info .divider{
-    background-color: #F2F2F2;
-    height: 2rpx;
-    margin: 30rpx 0;
-}
-
-.comment-wrapper .comment-info .like-wrapper{
-    display: flex;
-    align-items: center;
-}
-.comment-wrapper .comment-info .like-wrapper .icon{
-    width: 30rpx;
-    height: 30rpx;
-    margin-right: 5rpx;
-}
-
-.comment-wrapper .comment-info .like-wrapper .like{
-    color: #969696;
-    font-size: 20rpx;
-}
-
 .review-wrapper .title-wrapper{
     display: flex;
     justify-content: flex-start;
-    margin-bottom: 30rpx;
+    margin-bottom: 20rpx;
     margin-left: 30rpx;
+
 }
 
 .review-wrapper .review-info {
     background-color: #fff;
-    padding: 50rpx 30rpx;
+    padding: 0rpx 30rpx;
     margin-bottom: 30rpx;
 }
 
 .review-wrapper .review-info .author{
     display: flex;
     align-items: center;
+    padding-top: 20rpx;
 }
 
 .review-wrapper .review-info .author .avatar{
-    width: 100rpx;
-    height: 100rpx;
-    border-radius: 50rpx;
+    width: 50rpx;
+    height: 50rpx;
+    border-radius: 25rpx;
     margin-right: 10rpx;
 }
 
@@ -275,6 +222,7 @@ Page{
 
 .review-wrapper .review-info .review{
     font-size: 30rpx;
+    padding-bottom: 20rpx;
 }
 
 .review-wrapper .review-info .author .name{

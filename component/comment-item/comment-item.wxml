@@ -1,0 +1,18 @@
+<view class="comment-info">
+      <view class="author">
+            <image class="avatar" src=" {{comment.author.avatar}}"></image>
+            <view class="info">
+                  <view class="name">{{comment.author.name}}</view>
+                  <view class="date-wrapper">
+                        <ratingStar score="{{comment.rating.value * 10}}" />
+                        <view class="date">{{comment.created_at}}</view>
+                  </view>
+            </view>
+      </view>
+      <view class="comment">{{comment.content}}</view>
+      <view class="like-wrapper">
+            <image class="icon" src="/assets/imgs/ic_like.png" />
+            <view class="like">{{comment.useful_count}}</view>
+      </view>
+      <view class="divider"></view>
+</view>
