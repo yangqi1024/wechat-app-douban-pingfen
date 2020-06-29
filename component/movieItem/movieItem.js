@@ -23,11 +23,10 @@ Component({
    */
   methods: {
     seeDetail: function(e) {
-      console.log(e);
       let movieId = e.currentTarget.dataset.movieid;
-      console.log(movieId);
+      let title = e.currentTarget.dataset.title;
       wx.navigateTo({
-        url: `/pages/detail/detail?id=${movieId}`
+        url: `/pages/detail/detail?id=${movieId}&title=${title}`
       });
     }
   }

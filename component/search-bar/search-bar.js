@@ -7,6 +7,10 @@ Component({
     title: {
       type: String,
       value: "搜索"
+    },
+    focus:{
+      type:Boolean,
+      value:true
     }
   },
 

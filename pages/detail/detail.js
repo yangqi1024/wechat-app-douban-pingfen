@@ -5,7 +5,8 @@ Page({
    */
   data: {
     movie: {},
-    summaryOpen: false
+    summaryOpen: false,
+    title:""
   },
 
   /**
@@ -13,6 +14,8 @@ Page({
    */
   onLoad: function(options) {
     let id = options.id;
+    let title = options.title;
+    this.setData({title})
     // this.loadData(id);
     this.loadLocalData(id);
   },

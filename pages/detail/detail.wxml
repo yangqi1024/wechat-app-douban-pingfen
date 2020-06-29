@@ -1,3 +1,4 @@
+<nav-bar title="{{title}}"/>
 <view class="container">
     <view class="introduction">
         <image class="img" src="{{movie.images.large}}" />

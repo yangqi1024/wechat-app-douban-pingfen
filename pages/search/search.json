@@ -1,6 +1,7 @@
 {
   "usingComponents": {
     "nav-bar": "/component/nav-bar/nav-bar",
-    "searchbar": "/component/search-bar/search-bar"
+    "searchbar": "/component/search-bar/search-bar",
+    "rating": "/component/rating/rating"
   }
 }

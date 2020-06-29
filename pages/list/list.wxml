@@ -1,4 +1,5 @@
 <!-- pages/list/list.wxml -->
+<nav-bar title="{{title}}"/>
 <view class="container">
     <view class="item-wrapper">
         <movieItem class="item" wx:for="{{movies}}" wx:for-item="movie" movie="{{movie}}" />

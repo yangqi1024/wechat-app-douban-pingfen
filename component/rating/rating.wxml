@@ -1,0 +1,20 @@
+<!-- component/rating/rating.wxml -->
+<view class="rating-wrapper">
+    <view class="average-wrapper">
+        <view class="average">{{average}}</view>
+        <ratingStar score="{{score}}" />
+    </view>
+    <view class="rating-detail-wrapper">
+        <view class="rating-detail" wx:for="{{percent}}" wx:key="unique" >
+            <view class="star-wrapper">
+                <image class="hide-star" src="/assets/imgs/rating_star_small_off.png" wx:for="{{index}}" wx:key="unique" />
+                <image class="star" src="/assets/imgs/rating_star_small_off.png" wx:for="{{percent.length-index}}" wx:key="unique" />
+            </view>
+            <view class="rectangle">
+                <view class="bottom" style="width:{{width}}px"></view>
+                <view class="top" style="width:{{item}}%"></view>
+            </view>
+            <view class="percent">{{item}}%</view>
+        </view>
+    </view>
+</view>
