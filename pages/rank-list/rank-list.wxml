@@ -1,0 +1,23 @@
+<nav-bar title="{{title}}"/>
+<view class="container">
+    <view class="bg-wrapper">
+        一周口碑电影榜
+    </view>
+    <view class="item-wrapper" wx:for="{{subjects}}" wx:key="unique">
+        <view class="item">
+            <view class="top">No.{{item.rank}}</view>
+            <view class="info-wrapper">
+                <image class="img" src="{{item.subject.images.large}}"/>
+                  <view class="info">
+                      <view class="title">{{item.subject.title}}</view>
+                      <view class="rating-wrapper">
+                          <ratingStar score="{{30}}"/>
+                          <view class="score">{{item.subject.rating.average}}</view>
+                      </view>
+                      <view class="desc">{{item.desc}}</view>
+                  </view>
+            </view>
+            <view class="summary"></view>
+        </view>
+    </view>
+</view>

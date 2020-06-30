@@ -1,0 +1,65 @@
+/* pages/rank-list/rank-list.wxss */
+Page{
+    background-color: #EDEDED
+}
+
+.container .bg-wrapper{
+    height: 300rpx;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .item-wrapper {
+    padding: 30rpx 30rpx;
+    background-color: #fff;
+    margin-bottom: 20rpx;
+}
+
+.container .item-wrapper .item{
+    display: flex;
+    flex-direction: column;
+}
+
+.container .item-wrapper .item .top{
+    background-color: #FFCF7F;
+    color: #A16100;
+    font-size: 26rpx;
+    width: fit-content;
+    margin-bottom: 10rpx;
+    padding: 5rpx 8rpx;
+    border-radius: 4rpx;
+}
+
+.container .item-wrapper .item .info-wrapper {
+    display: flex;
+}
+
+.container .item-wrapper .item .info-wrapper .img{
+    width: 150rpx;
+    height: 217rpx; 
+    border-radius: 5rpx;
+    margin-right: 20rpx;
+}
+
+.container .item-wrapper .item .info-wrapper .info .title{
+    font-weight: bold;
+    font-size: 36rpx;
+}
+
+.container .item-wrapper .item .info-wrapper .info .rating-wrapper{
+    display: flex;
+    align-items: center;
+    color: #AFAFAF;
+    font-size: 26rpx;
+}
+
+.container .item-wrapper .item .info-wrapper .info .rating-wrapper .score{
+    margin-left: 5rpx;
+}
+
+.container .item-wrapper .item .info-wrapper .info .desc{
+    color: #AFAFAF;
+    font-size: 26rpx;
+}

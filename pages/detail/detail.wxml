@@ -68,13 +68,13 @@
     <view class="comment-wrapper">
         <view class="title-wrapper">
             <view class="title">短评</view>
-            <view class="count-wrapper">
+            <view class="count-wrapper" bindtap="toComment">
                 <view class="count">全部 {{movie.comments_count}}</view>
                 <view class="arrow"></view>
             </view>
         </view>
         <comment-item  wx:for="{{movie.popular_comments}}" wx:for-item="comment" wx:key="unique" comment="{{comment}}"/>
-        <view class="title-wrapper">
+        <view class="title-wrapper" bindtap="toComment">
             <view class="title">查看全部短评</view>
             <view class="count-wrapper">
                 <view class="arrow"></view>

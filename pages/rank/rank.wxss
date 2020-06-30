@@ -1,1 +1,14 @@
-/* pages/rank/rank.wxss */
+.container {
+    padding: 30rpx 30rpx;
+}
+
+.container .annual{
+    height: 300rpx;
+    background-color: coral;
+    margin-bottom: 30rpx;
+}
+
+.container .weekly{
+    height: 300rpx;
+    background-color: dodgerblue;
+}

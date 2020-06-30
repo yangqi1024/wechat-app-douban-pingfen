@@ -1,2 +1,11 @@
 <nav-bar title="榜单" back="false" home="false"/>
-<text>pages/rank/rank.wxml</text>
+<view class="container">
+<view class="annual" bind:tap="annual">
+    2019年度电影榜单
+</view>
+
+<view class="weekly" bind:tap="weekly">
+    一周口碑电影榜
+</view>
+</view>
+

@@ -9,7 +9,9 @@
     "pages/search/search",
     "pages/detail/detail",
     "pages/comment/comment",
-    "pages/review/review"
+    "pages/review/review",
+    "pages/webview/webview",
+    "pages/rank-list/rank-list"
   ],
   "window": {
     "backgroundTextStyle": "light",

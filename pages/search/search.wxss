@@ -1,1 +1,33 @@
 /* pages/search/search.wxss */
+
+.item-wrapper .item{
+    margin: 30rpx;
+    display: flex;
+}
+
+.item-wrapper .item .img{
+    width: 150rpx;
+    height: 217rpx; 
+    margin-right: 30rpx;
+}
+
+.item-wrapper .item image{
+    width: 100%;
+    height: 100%; 
+}
+
+.item-wrapper .divider{
+    background-color: #F2F2F2;
+    height: 2rpx;
+    margin: 30rpx 0;
+}
+
+.item-wrapper .item .info .title{
+    font-size: 32rpx;
+}
+
+.item-wrapper .item .info .author-wrapper{
+    font-size: 26rpx;
+    color: #919191;
+    margin-top: 10rpx;
+}

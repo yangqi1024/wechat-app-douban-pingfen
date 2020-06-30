@@ -1,3 +1,15 @@
-<nav-bar title="搜索"  statusBarColor="#42BD55" navBarColor="#42BD55" titleColor="#fff"/>
-<searchbar bind:search="bindSearch"/>
-<rating average="5.6" score="30" rating="{{[296,531,1004,178,43]}}" width="{{100}}"/>
+<nav-bar title="搜索" statusBarColor="#42BD55" navBarColor="#42BD55" titleColor="#fff" />
+<searchbar bind:search="bindSearch" />
+<view class="item-wrapper" wx:for="{{books}}">
+    <view class="item">
+        <view class="img">
+            <image src="{{item.image}}" mode="aspectFill"/>
+        </view>
+        <view class="info">
+            <view class="title">{{item.title}}</view>
+            <view class="rating-wrapper"></view>
+            <view class="author-wrapper">{{item.authorInfo}}</view>
+        </view>
+    </view>
+    <view class="divider"></view>
+</view>
