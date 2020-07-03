@@ -35,13 +35,13 @@ Page({
   },
   onLoad: function () {
     this.loadLocalData();
-    // this.getCity((city) => {
-    //   this.loadData(0, { city: city, apikey: '0df993c66c0c636e29ecbb5344252a4a' })
-    // });
-    // this.loadData(1, { apikey: '0df993c66c0c636e29ecbb5344252a4a' })
-    // this.loadData(2, { apikey: '0df993c66c0c636e29ecbb5344252a4a' })
-    // this.loadData(3, { apikey: '0df993c66c0c636e29ecbb5344252a4a' })
-    // this.loadData(4, { apikey: '0df993c66c0c636e29ecbb5344252a4a' })
+    this.getCity((city) => {
+      this.loadData(0, { city: city, apikey: '0df993c66c0c636e29ecbb5344252a4a' })
+    });
+    this.loadData(1, { apikey: '0df993c66c0c636e29ecbb5344252a4a' })
+    this.loadData(2, { apikey: '0df993c66c0c636e29ecbb5344252a4a' })
+    this.loadData(3, { apikey: '0df993c66c0c636e29ecbb5344252a4a' })
+    this.loadData(4, { apikey: '0df993c66c0c636e29ecbb5344252a4a' })
   },
 
   loadData: function (idx, params) {

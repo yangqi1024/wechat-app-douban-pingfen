@@ -1,11 +1,27 @@
-<nav-bar title="榜单" back="false" home="false"/>
+<nav-bar title="榜单" back="false" home="false" />
 <view class="container">
-<view class="annual" bind:tap="annual">
-    2019年度电影榜单
+    <view class="annual" bind:tap="annual">2019年度电影榜单</view>
+    <view class="weekly" bind:tap="weekly">一周口碑电影榜</view>
+    <view class="item-wrapper" bind:tap="movieTop250">
+        <view class="item">
+            <view class="img-wrapper">
+                <image class="img"></image>
+                <view class="type">电影TOP 250</view> 
+            </view>
+            <view class="info-wrapper">
+                <view class="info">
+                    <view class="title">1.肖申克的救赎</view>
+                    <view class="score">9.7分</view>
+                </view>
+                <view class="info">
+                    <view class="title">2.霸王别姬</view>
+                    <view class="score">9.6分</view>
+                </view>
+                <view class="info">
+                    <view class="title">2.阿甘正传</view>
+                    <view class="score">9.5分</view>
+                </view>
+            </view>
+        </view>
+    </view>
 </view>
-
-<view class="weekly" bind:tap="weekly">
-    一周口碑电影榜
-</view>
-</view>
-

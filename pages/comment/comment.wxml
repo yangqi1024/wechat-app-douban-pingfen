@@ -1,6 +1,7 @@
 <nav-bar title="《{{title}}》的短评" />
-<scroll-view class="container" bindscrolltolower="scrolltolower" scroll-y="{{true}}">
-    <view class="rating-wrapper">
+<scroll-view  bindscrolltolower="scrolltolower" scroll-y="{{true}}">
+    <view  class="container">
+          <view class="rating-wrapper">
         <view class="title-wrapper">
             <view class="title">豆瓣评分</view>
         </view>
@@ -17,5 +18,6 @@
              <view class="count">{{movie.comments_count}}条</view>
         </view>
         <comment-item wx:for="{{comments}}" wx:for-item="comment" wx:key="unique" comment="{{comment}}" />
+    </view>
     </view>
 </scroll-view>

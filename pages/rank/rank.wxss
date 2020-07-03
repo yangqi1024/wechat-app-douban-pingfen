@@ -1,14 +1,81 @@
 .container {
-    padding: 30rpx 30rpx;
+  padding: 30rpx 30rpx;
+  color: #fff;
 }
 
-.container .annual{
-    height: 300rpx;
-    background-color: coral;
-    margin-bottom: 30rpx;
+.container .annual {
+  height: 300rpx;
+  background-color: coral;
+  margin-bottom: 30rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.container .weekly{
-    height: 300rpx;
-    background-color: dodgerblue;
+.container .weekly {
+  height: 300rpx;
+  background-color: dodgerblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container .item-wrapper {
+  margin-top: 20rpx;
+}
+
+.container .item-wrapper .item {
+  display: flex;
+  align-items: center;
+}
+
+.container .item .img-wrapper {
+  width: 200rpx;
+  height: 200rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.container .item .img-wrapper .img {
+  background-color: cadetblue;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.container .item .img-wrapper .type {
+    z-index: 1;
+    font-size: 26rpx;
+}
+
+.container .item .info-wrapper {
+  border: 2rpx solid #e6e6e6;
+  border-radius: 5rpx;
+  border-left: none;
+  flex-grow: 1;
+  height: 180rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container .item .info-wrapper .info {
+  display: flex;
+  padding-left: 40rpx;
+  margin-bottom: 10rpx;
+}
+
+.container .item .info-wrapper .info .title {
+  color: #616161;
+  font-size: 26rpx;
+  margin-right: 10rpx;
+}
+
+.container .item .info-wrapper .info .score {
+  color: #e5b352;
+  font-size: 24rpx;
 }

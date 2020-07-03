@@ -8,6 +8,8 @@
 .item-wrapper .item .img{
     width: 150rpx;
     height: 217rpx; 
+    min-width: 150rpx;
+    min-height: 217rpx; 
     margin-right: 30rpx;
 }
 

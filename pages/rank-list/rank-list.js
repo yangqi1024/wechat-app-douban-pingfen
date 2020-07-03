@@ -13,12 +13,13 @@ Page({
    */
   onLoad: function(options) {
     let title = options.title;
+    let url = options.url;
     this.setData({ title });
-    this.loadData();
+    this.loadData(url);
   },
 
-  loadData: function() {
-    let url = wx.db.url("/v2/movie/weekly");
+  loadData: function(url) {
+    url = wx.db.url(url);
     var reqTask = wx.request({
       url: url,
       data: { apikey: "0df993c66c0c636e29ecbb5344252a4a" },
@@ -37,19 +38,39 @@ Page({
   },
 
   updateSubjects: function(subjects) {
-    return subjects.map(item => {
-      let subject = item.subject
-      let contury = ""
-      let genres = subject.genres.join(' ')
-      let directors = subject.directors.map((item)=>{
-        return item.name
-      }).join(' ')
+    return subjects.map((item,index) => {
+      let rank = item.rank || index+1
+      let subject = item.subject || item;
+      let contury = "";
+      let genres = subject.genres.join(" ");
+      genres = genres ? `${genres}/` : genres;
+      let directors = subject.directors
+        .map(item => {
+          return item.name;
+        })
+        .join(" ");
+      directors = directors ? `${directors}/` : directors;
+      let casts = subject.casts
+        .map(item => {
+          return item.name;
+        })
+        .join(" ");
+      item.desc = `${contury}${genres}${directors}${casts}`;
 
-      let casts = subject.casts.map((item)=>{
-        return item.name
-      }).join(' ')
-      item.desc = `${contury}/${genres}/${directors}/${casts}`
-      return item
+      item.imgUrl = subject.images.small 
+      item.title = subject.title
+      item.average = subject.rating.average
+      item.id = subject.id
+      item.rank = rank
+      return item;
+    });
+  },
+
+  seeDetail: function(e) {
+    let movieId = e.currentTarget.dataset.movieid;
+    let title = e.currentTarget.dataset.title;
+    wx.navigateTo({
+      url: `/pages/detail/detail?id=${movieId}&title=${title}`
     });
   }
 });

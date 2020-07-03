@@ -1,5 +1,5 @@
 .container{
-    padding: 30rpx 30rpx 0 30rpx ; 
+    margin: 30rpx 30rpx 0 30rpx;
 }
 
 .rating-wrapper .title-wrapper{
@@ -46,12 +46,10 @@
     margin-top: 50rpx;
 }
 
-
 .comment-wrapper .title-wrapper{
     display: flex;
     align-items: flex-end;
     margin-bottom: 30rpx;
-
 }
 
 .comment-wrapper .title-wrapper .title{

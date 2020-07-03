@@ -16,7 +16,7 @@ Page({
     let id = options.id;
     let title = options.title;
     this.setData({ title })
-    // this.loadData(id);
+    this.loadData(id);
     this.loadLocalData(id);
   },
 

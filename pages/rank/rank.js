@@ -23,7 +23,13 @@ Page({
 
   weekly:function(){
     wx.navigateTo({
-      url: `/pages/rank-list/rank-list?title=${"口碑电影"}`
+      url: `/pages/rank-list/rank-list?title=${"口碑电影"}&url=${'/v2/movie/weekly'}`
+    });
+  },
+
+  movieTop250:function(){
+    wx.navigateTo({
+      url: `/pages/rank-list/rank-list?title=${"豆瓣 Top250"}&url=${'/v2/movie/top250'}`
     });
   }
 })

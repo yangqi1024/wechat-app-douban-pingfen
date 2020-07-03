@@ -24,8 +24,8 @@
     color: red;
 }
 .icon image{
-    width: 30rpx;
-    height: 30rpx;
+    width: 36rpx;
+    height: 36rpx;
 }
 .icon .back{
     margin-right: 30rpx;

@@ -13,9 +13,9 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function(options) {
-    let books = wx.getStorageSync("/v2/book/search");
-    console.log(books);
-    this.setData({books})
+    // let books = wx.getStorageSync("/v2/book/search");
+    // console.log(books);
+    // this.setData({books})
   },
 
   bindSearch: function(e) {
